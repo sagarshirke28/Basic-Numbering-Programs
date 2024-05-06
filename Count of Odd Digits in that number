@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) 
+    {
+        System.out.println("enter a number");
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int count=0;
+        while(a>0)
+        {
+           int rem=a%10;
+           if(rem%2==1)
+           {
+              count++; 
+           }
+           a=a/10;
+        }
+        
+        System.out.print("count of even digits is= "+count);
+    }
+}
