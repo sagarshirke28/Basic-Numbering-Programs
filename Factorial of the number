@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) 
+    {
+        int start=1;
+        int fact=1;
+        int sum=0;
+        System.out.println("enter a number");
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        while(start<=a)
+        {
+            fact=fact*start;
+            
+            start++;
+        }
+        System.out.println(fact);
+    }
+}
